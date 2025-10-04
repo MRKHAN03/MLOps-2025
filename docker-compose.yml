@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app   # remove for production so container uses built-in files
+    environment:
+      - MODEL_PATH=/app/movie_data.pkl
+    restart: unless-stopped
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0

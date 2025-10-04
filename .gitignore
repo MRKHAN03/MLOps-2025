@@ -1,0 +1,55 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- Virtual environments ---
+.env
+.venv/
+env/
+venv/
+
+# --- Logs & cache ---
+*.log
+*.tmp
+*.cache
+.mypy_cache/
+.pytest_cache/
+
+# --- Data files ---
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.zip
+*.tar
+*.gz
+
+# --- Docker ---
+# keep dockerfile and docker-compose.yml tracked
+# ignore other temporary docker files if any
+**/docker_temp/
+.dockerignore
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor specific ---
+.vscode/
+.idea/
+
+# --- Misc ---
+# model weights, checkpoints etc.
+*.h5
+*.pt
+*.ckpt
+*.joblib
